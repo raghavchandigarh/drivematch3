@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results - DriveMatch</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Minimal Header -->
+    <header class="py-4" style="background: linear-gradient(90deg, #1F4D35, #63dd6d);">
+        <div class="container d-flex justify-content-between align-items-center">
+            <img src="assets/logo.png" alt="DriveMatch Logo" class="logo">
+            <nav class="d-flex gap-3">
+                <a href="index.html" class="text-white">Home</a>
+                <a href="#" class="text-white">Rent Out Your Vehicle</a>
+                <a href="#" class="text-white">Language</a>
+                <a href="login.html" class="text-white">Sign Up/Log In</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Search Section -->
+    <section class="search-bar-section py-4">
+        <div class="container">
+            <form class="d-flex align-items-center gap-3 bg-light p-3 rounded shadow">
+                <!-- Location Input -->
+                <div class="flex-grow-1">
+                    <input type="text" class="form-control" placeholder="Where to?" value="Turin">
+                </div>
+    
+                <!-- Category Dropdown -->
+                <div>
+                    <select class="form-select">
+                        <option value="" selected>Car</option>
+                        <option value="sedan">Sedan</option>
+                        <option value="suv">SUV</option>
+                        <option value="electric">Electric</option>
+                        <option value="van">Van</option>
+                        <option value="luxury">Luxury</option>
+                    </select>
+                </div>
+    
+                <!-- Pickup Date -->
+                <div>
+                    <input type="date" class="form-control" value="2024-11-20">
+                </div>
+    
+                <!-- Return Date -->
+                <div>
+                    <input type="date" class="form-control" value="2024-11-26">
+                </div>
+    
+                <!-- Search Button -->
+                <div>
+                    <button type="submit" class="btn btn-primary px-4 py-2" style="background: linear-gradient(90deg, #ff8a80, #c14311); color: #fff; font-weight: bold; border: none; border-radius: 8px; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.2s ease;">
+                        Search
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+    
+
+    <!-- Search Results -->
+    <section class="py-4">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Car 1 -->
+                <div class="col-md-4">
+                    <a href="booking.html" class="text-decoration-none">
+                        <div class="card car-card shadow-sm h-100">
+                            <div class="car-image-container">
+                                <img src="assets/hyundai.jpeg" class="card-img-top" alt="Hyundai i30">
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class="card-title mb-0">Hyundai i30</h5>
+                                    <span class="price">25€</span>
+                                </div>
+                                <p class="text-muted mb-1">Per day</p>
+                                <div class="rating mb-2">
+                                    <span>5.0 ★</span> <span class="text-muted">(6 ratings)</span>
+                                </div>
+                                <p class="location text-muted">10134 Turin · Delivery available</p>
+                                <div class="tags mt-2">
+                                    <span class="badge bg-light text-dark">Keyless</span>
+                                    <span class="badge bg-light text-dark">Instant booking</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+    
+                <!-- Car 2 -->
+                <div class="col-md-4">
+                    <a href="booking.html" class="text-decoration-none">
+                        <div class="card car-card shadow-sm h-100">
+                            <div class="car-image-container">
+                                <img src="assets/toyota.jpg" class="card-img-top" alt="Toyota C-HR">
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class="card-title mb-0">Toyota C-HR</h5>
+                                    <span class="price">40€</span>
+                                </div>
+                                <p class="text-muted mb-1">Per day</p>
+                                <div class="rating mb-2">
+                                    <span>5.0 ★</span> <span class="text-muted">(6 ratings)</span>
+                                </div>
+                                <p class="location text-muted">10134 Turin · Delivery available</p>
+                                <div class="tags mt-2">
+                                    <span class="badge bg-light text-dark">Keyless</span>
+                                    <span class="badge bg-light text-dark">Instant booking</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+    
+                <!-- Car 3 -->
+                <div class="col-md-4">
+                    <a href="booking.html" class="text-decoration-none">
+                        <div class="card car-card shadow-sm h-100">
+                            <div class="car-image-container">
+                                <img src="assets/peug.jpg" class="card-img-top" alt="Peugeot 308">
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class="card-title mb-0">Peugeot 308</h5>
+                                    <span class="price">25€</span>
+                                </div>
+                                <p class="text-muted mb-1">Per day</p>
+                                <div class="rating mb-2">
+                                    <span>4.8 ★</span> <span class="text-muted">(15 ratings)</span>
+                                </div>
+                                <p class="location text-muted">10134 Turin · Delivery available</p>
+                                <div class="tags mt-2">
+                                    <span class="badge bg-light text-dark">Keyless</span>
+                                    <span class="badge bg-light text-dark">Instant booking</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="text-center py-3" style="background: #333; color: #ccc;">
+        <p>&copy; 2024 DriveMatch. All rights reserved.</p>
+        <a href="#" class="text-light">Privacy Policy</a>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Sign Up - DriveMatch</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Reuse Header -->
+    <header class="py-4" style="background: linear-gradient(90deg, #1F4D35, #63dd6d);">
+        <div class="container d-flex justify-content-between align-items-center">
+            <img src="assets/logo.png" alt="DriveMatch Logo" class="logo">
+            <nav class="d-flex gap-3">
+                <a href="index.html" class="text-white">Home</a>
+                <a href="#" class="text-white">Rent Out Your Vehicle</a>
+                <a href="#" class="text-white">Language</a>
+                <a href="login.html" class="text-white">Sign Up/Log In</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Login/Signup Section -->
+    <section class="login-section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="card shadow-lg border-0 login-card">
+                        <div class="card-body">
+                            <h2 class="text-center mb-4">Welcome to <span class="text-primary">DriveMatch</span></h2>
+                            <!-- Updated Form -->
+                            <form onsubmit="redirectToDashboard(event)">
+                                <!-- Email Input -->
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email Address</label>
+                                    <input type="email" id="email" class="form-control input-style" placeholder="Enter your email" required>
+                                </div>
+                                <!-- Password Input -->
+                                <div class="mb-3">
+                                    <label for="password" class="form-label">Password</label>
+                                    <input type="password" id="password" class="form-control input-style" placeholder="Enter your password" required>
+                                </div>
+                                <!-- Login/Sign Up Button -->
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-primary w-100 py-2" id="form-action-button">Log In</button>
+                                </div>
+                                <!-- Toggle Between Login and Sign Up -->
+                                <p class="text-center mt-3">
+                                    Don't have an account? 
+                                    <a href="#" id="toggle-form" class="text-primary fw-bold">Sign Up</a>
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <footer class="text-center py-3" style="background: #333; color: #ccc;">
+        <p>&copy; 2024 DriveMatch. All rights reserved.</p>
+        <a href="#" class="text-light">Privacy Policy</a>
+    </footer>
+
+    <script>
+        function redirectToPage(event) {
+            event.preventDefault(); // Prevent default form submission
+    
+            // Get the 'redirect' parameter from the URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const redirectUrl = urlParams.get('redirect') || 'dashboard.html'; // Default to dashboard
+    
+            // Redirect to the specified page
+            window.location.href = redirectUrl;
+        }
+    
+        // Attach the redirect logic to the form submission
+        document.querySelector('form').addEventListener('submit', redirectToPage);
+    </script>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

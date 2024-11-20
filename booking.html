@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking - DriveMatch</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .booking-section {
+            flex-grow: 1;
+        }
+        .card {
+            border-radius: 15px;
+        }
+        .car-details, .pricing {
+            height: 100%;
+        }
+        .map-container img {
+            border-radius: 10px;
+            width: 100%;
+            object-fit: cover;
+            height: 150px;
+        }
+        .map-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        footer {
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="py-3" style="background: linear-gradient(90deg, #1F4D35, #63dd6d);">
+        <div class="container d-flex justify-content-between align-items-center">
+            <img src="assets/logo.png" alt="DriveMatch Logo" class="logo">
+            <nav class="d-flex gap-3">
+                <a href="index.html" class="text-white">Home</a>
+                <a href="search.html" class="text-white">Rent Out Your Vehicle</a>
+                <a href="#" class="text-white">Language</a>
+                <a href="login.html" class="text-white">Sign Up/ Log In</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Booking Section -->
+    <section class="booking-section py-4">
+        <div class="container-fluid">
+            <div class="row g-3">
+                <!-- Left Section -->
+                <div class="col-lg-6 d-flex flex-column">
+                    <div class="card car-details shadow-sm">
+                        <img src="assets/toyota.jpg" alt="Toyota C-HR" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="fw-bold">Pick-up and return location</h5>
+                            <div class="map-info">
+                                <div>
+                                    <p class="fw-bold mb-1">Car's home address</p>
+                                    <p class="text-muted mb-3">10134 Turin<br>Public parking space</p>
+                                    <p class="fw-bold mb-1">Delivered to you</p>
+                                    <p class="text-muted">Up to 30km away</p>
+                                    <p class="fw-bold">From <span class="text-success">29.00€</span></p>
+                                </div>
+                                <div class="map-container">
+                                    <img src="assets/turin.png" alt="Madrid Map">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Section -->
+                <div class="col-lg-6 d-flex">
+                    <div class="card pricing shadow-sm w-100 p-4">
+                       
+                        
+                        <!-- Booking Dates -->
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Pick-up</label>
+                            <input type="text" class="form-control" value="Nov 20, 08:45" readonly>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Return</label>
+                            <input type="text" class="form-control" value="Nov 26, 08:45" readonly>
+                        </div>
+
+                        <!-- Pricing Details -->
+                        <ul class="list-group mb-4">
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                6 days
+                                <span>198.10€</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Insurance and roadside assistance
+                                <span>19.81€</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Service fee
+                                <span>22.50€</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center fw-bold">
+                                Total price
+                                <span>240.41€</span>
+                            </li>
+                            <li class="list-group-item text-end text-muted">
+                                + Deposit
+                            </li>
+                        </ul>
+
+                        <!-- Continue Button -->
+                        <button class="btn btn-primary w-100 py-2" 
+                        onclick="window.location.href='login.html?redirect=confirm-payment.html'">Continue</button>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center py-2" style="background: #333; color: #ccc;">
+        <p>&copy; 2024 DriveMatch. All rights reserved.</p>
+        <a href="#" class="text-light">Privacy Policy</a>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

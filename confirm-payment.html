@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm Payment - DriveMatch</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="py-3" style="background: linear-gradient(90deg, #1F4D35, #63dd6d);">
+        <div class="container d-flex justify-content-between align-items-center">
+            <img src="assets/logo.png" alt="DriveMatch Logo" class="logo">
+            <nav class="d-flex gap-3">
+                <a href="index.html" class="text-white">Home</a>
+                <a href="search.html" class="text-white">Rent Out Your Vehicle</a>
+                <a href="#" class="text-white">Language</a>
+                <a href="dashboard.html" class="text-white">
+                    <i class="fas fa-user-circle" style="font-size: 1.5rem;"></i>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Confirm Payment Section -->
+    <section class="py-5">
+        <div class="container text-center">
+            <div class="card shadow-sm mx-auto" style="max-width: 600px; border-radius: 15px;">
+                <div class="card-body">
+                    <h2 class="text-primary fw-bold mb-4">Confirm Your Payment</h2>
+                    <p class="mb-4">Please review your payment details before completing your booking:</p>
+
+                    <!-- Payment Details -->
+                    <div class="mb-4 text-start">
+                        <h5 class="fw-bold">Payment Summary</h5>
+                        <ul class="list-group">
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Vehicle Price (6 days)
+                                <span>198.10€</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Insurance and Roadside Assistance
+                                <span>19.81€</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Service Fee
+                                <span>22.50€</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center fw-bold">
+                                Total Price
+                                <span>240.41€</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Payment Method -->
+                    <div class="text-start mb-4">
+                        <h5 class="fw-bold">Payment Method</h5>
+                        <form>
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="radio" name="paymentMethod" id="creditCard" checked>
+                                <label class="form-check-label" for="creditCard">
+                                    Credit/Debit Card
+                                </label>
+                            </div>
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="radio" name="paymentMethod" id="paypal">
+                                <label class="form-check-label" for="paypal">
+                                    PayPal
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Confirm Button -->
+                    <button class="btn btn-primary w-100 py-2" onclick="window.location.href='confirmation.html'">
+                        Confirm Payment
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center py-3" style="background: #333; color: #ccc;">
+        <p>&copy; 2024 DriveMatch. All rights reserved.</p>
+        <a href="#" class="text-light">Privacy Policy</a>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

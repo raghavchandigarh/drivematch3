@@ -1,0 +1,442 @@
+/* Ensure body takes full height */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(180deg, #ffefef, #fff7f0);
+    color: #333;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: linear-gradient(90deg, #1F4D35, #63dd6d);
+    color: white;
+    padding: 30px 0;
+    border-radius: 0 0 15px 15px;
+}
+
+header .logo {
+    max-width: 150px;
+}
+
+header nav {
+    margin-right: 20px;
+}
+
+header nav a {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+header nav a.btn-primary {
+    background: #ff8a80;
+    color: white;
+}
+
+header nav a.btn-outline-secondary {
+    color: white;
+    border:none;
+}
+
+header nav a.btn-primary:hover {
+    background: #ff5252;
+}
+
+header nav a.btn-outline-secondary:hover {
+    background: #010000;
+    border-color: #bbb;
+}
+
+/* Fix spacing for text and prevent overlap */
+header h1 {
+    margin-bottom: 20px;
+}
+
+header p {
+    margin-top: 0;
+}
+
+.search-bar-section {
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px; /* Prevent overlap with footer */
+}
+
+.search-bar input {
+    font-size: 1rem;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.search-bar .input-group-text {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+}
+
+.search-bar button {
+    background-color: #ff8a80;
+    color: white;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+.search-bar button:hover {
+    background-color: #ff5252;
+}
+
+/* Footer adjustment for sticky placement */
+footer {
+    background: #333;
+    color: #ccc;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto; /* Push footer to the bottom */
+    width: 100%;
+}
+
+/* Ensure all images are consistently sized */
+.card-img-top {
+    width: 100%;
+    height: 200px; /* Set a consistent height for all images */
+    object-fit: cover; /* Ensure images don't stretch */
+    border-radius: 8px;
+}
+
+/* Ensure all cards have the same height */
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+/* Hover effect for car images */
+.car-image-container {
+    overflow: hidden;
+}
+
+.car-image {
+    transition: transform 0.3s ease;
+}
+
+.car-image-container:hover .car-image {
+    transform: scale(1.1); /* Pop-up effect */
+    filter: brightness(1.1);
+}
+
+/* Card container styling */
+.car-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.car-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Image styling */
+.car-image-container img {
+    width: 100%;
+    height: 180px; /* Consistent image height */
+    object-fit: cover; /* Prevent distortion */
+}
+
+/* Title and Price */
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.price {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+/* Rating styling */
+.rating span {
+    font-size: 0.9rem;
+}
+
+.rating span:first-child {
+    color: #f1c40f; /* Gold color for stars */
+    font-weight: 600;
+}
+
+/* Location text */
+.location {
+    font-size: 0.85rem;
+    color: #6c757d; /* Muted text color */
+}
+
+/* Tag badges */
+.badge {
+    font-size: 0.75rem;
+    padding: 5px 10px;
+    border-radius: 12px;
+    margin-right: 5px;
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+/* Login Card Styling */
+.login-card {
+    border-radius: 15px;
+    background: linear-gradient(135deg, #ffffff, #f9f9f9);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+/* Card Header */
+.login-card h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Input Styling */
+.input-style {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 1rem;
+    background-color: #f8f9fa;
+    transition: all 0.3s ease;
+}
+
+.input-style:focus {
+    border-color: #007bff;
+    box-shadow: 0px 4px 8px rgba(0, 123, 255, 0.2);
+    background-color: #fff;
+}
+
+/* Submit Button */
+.btn-primary {
+    background: linear-gradient(90deg, #1F4D35, #63dd6d);
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 12px rgba(0, 123, 255, 0.3);
+}
+
+/* Toggle Link */
+#toggle-form {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#toggle-form:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Booking Section Styling */
+/* Adjusted card styling */
+.booking-section .card {
+    border-radius: 15px;
+    overflow: hidden;
+    background: white;
+}
+
+.booking-section .card-img-top {
+    height: 350px;
+    object-fit: cover;
+}
+
+/* Map Image Styling */
+.booking-section .img-fluid {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Button styling */
+.booking-section .btn-primary {
+    background: linear-gradient(90deg, #1F4D35, #63dd6d);
+    border: none;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.booking-section .btn-primary:hover {
+    background: #63dd6d;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Chat Area Styling */
+.chat-area {
+    height: 85vh;
+}
+
+.chat-list {
+    overflow-y: auto;
+    max-height: 85vh;
+}
+
+.chat-list .chat-name {
+    cursor: pointer;
+    padding: 15px;
+    border: none;
+    border-bottom: 1px solid #eaeaea;
+    transition: background-color 0.2s ease;
+}
+
+.chat-list .chat-name:hover {
+    background-color: #f8f9fa;
+}
+
+.chat-window {
+    display: flex;
+    flex-direction: column;
+    height: 85vh;
+}
+
+.chat-header {
+    border-radius: 15px 15px 0 0;
+    background: linear-gradient(90deg, #1F4D35, #63dd6d);
+}
+
+
+
+.chat-input {
+    border-top: 1px solid #eaeaea;
+}
+
+/* Chat Bubble Styling */
+
+.chat-content {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    gap: 10px; /* Add spacing between bubbles */
+}
+
+/* Chat Bubble Styling */
+.chat-bubble {
+    max-width: 75%;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    word-wrap: break-word; /* Ensure long texts wrap */
+}
+
+.chat-bubble.sent {
+    background-color: #1F4D35;
+    color: white;
+    align-self: flex-end; /* Align sent messages to the right */
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.chat-bubble.received {
+    background-color: #eaeaea;
+    color: #333;
+    align-self: flex-start; /* Align received messages to the left */
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Send Button Styling */
+.send-btn {
+    background: linear-gradient(90deg, #1F4D35, #63dd6d);
+    border: none;
+    color: white;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.send-btn:hover {
+    background: #63dd6d;
+}
+
+/* Dashboard Page Styling */
+
+/* Left Panel */
+.dashboard-panel {
+    height: 100%;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 15px;
+    transition: box-shadow 0.3s ease;
+}
+
+.dashboard-panel ul {
+    margin: 0;
+    padding: 0;
+}
+
+.panel-option {
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.panel-option:hover {
+    background: #1F4D35;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Right Panel */
+.dashboard-info {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.dashboard-info ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.dashboard-info ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+/* Edit Button */
+.dashboard-info .btn-primary {
+    background: linear-gradient(90deg, #1F4D35, #63dd6d);
+    border: none;
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.dashboard-info .btn-primary:hover {
+    background: #63dd6d;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+

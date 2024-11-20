@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DriveMatch</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="py-4">
+        <div class="container d-flex justify-content-between align-items-center">
+            <img src="assets/logo.png" alt="DriveMatch Logo" class="logo">
+            <nav class="d-flex gap-3">
+                <a href="index.html" class="text-white">Home</a>
+                <a href="#" class="text-white">Rent Out Your Vehicle</a>
+                <a href="#" class="text-white">Language</a>
+                <a href="login.html" class="text-white">Sign Up/Log In</a>
+            </nav>
+        </div>
+        <div class="container text-center mt-3">
+            <h1 class="display-4">Share a Vehicle, Help Save the Planet</h1>
+            <p class="lead">Find the perfect vehicle wherever you need it.</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="search-bar-section py-4">
+            <div class="container">
+                <form class="row g-3 bg-light p-4 rounded shadow">
+                    <!-- Location Input -->
+                    <div class="col-md-3">
+                        <label for="location" class="visually-hidden">Location</label>
+                        <div class="input-group">
+                            <span class="input-group-text bg-white border-0">📍</span>
+                            <input type="text" id="location" class="form-control" placeholder="Where to?">
+                        </div>
+                    </div>
+        
+                    <!-- Vehicle Type Dropdown -->
+                    <div class="col-md-3">
+                        <label for="vehicle-type" class="visually-hidden">Vehicle Type</label>
+                        <select id="vehicle-type" class="form-select">
+                            <option value="">Select Vehicle Type</option>
+                            <option value="sedan">Sedan</option>
+                            <option value="suv">SUV</option>
+                            <option value="electric">Electric</option>
+                            <option value="van">Van</option>
+                            <option value="luxury">Luxury</option>
+                        </select>
+                    </div>
+        
+                    <!-- Pickup Date -->
+                    <div class="col-md-3">
+                        <label for="pickup" class="visually-hidden">Pick-up</label>
+                        <input type="date" id="pickup" class="form-control" placeholder="Pick-up">
+                    </div>
+        
+                    <!-- Return Date -->
+                    <div class="col-md-3">
+                        <label for="return" class="visually-hidden">Return</label>
+                        <input type="date" id="return" class="form-control" placeholder="Return">
+                    </div>
+        
+                    <!-- Search Button -->
+                    <div class="col-12 text-center">
+                        <a href="search.html" class="btn btn-primary px-4 py-2" style="background: linear-gradient(90deg, #ff8a80, #c14311); color: #fff; font-weight: bold; border: none; border-radius: 8px; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.2s ease;">
+                            Search
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </section>        
+    </main>
+
+    <footer class="text-center">
+        <p>&copy; 2024 DriveMatch. All rights reserved.</p>
+        <a href="#" class="text-light">Privacy Policy</a>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
